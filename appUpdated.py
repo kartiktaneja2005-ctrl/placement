@@ -64,7 +64,7 @@ from sklearn.metrics import (
 # ============================================================================
 
 st.set_page_config(
-    page_title="FDA Placement Analytics",
+    page_title="SE Placement Analytics",
     page_icon="🎓",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -510,7 +510,7 @@ def detect_skill_gap(student_skills: list, companies_df: pd.DataFrame, top_k: in
 # ============================================================================
 
 def render_login():
-    st.markdown('<div class="main-header">🎓 FDA Placement Analytics</div>',
+    st.markdown('<div class="main-header">🎓 SE Placement Analytics</div>',
                 unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-tagline">'
@@ -577,7 +577,7 @@ def render_header():
              else '<span class="student-badge">STUDENT</span>')
     cols = st.columns([6, 2, 1.5])
     with cols[0]:
-        st.markdown('<div class="main-header">🎓 FDA Placement Analytics</div>',
+        st.markdown('<div class="main-header">🎓 SE Placement Analytics</div>',
                     unsafe_allow_html=True)
     with cols[1]:
         st.markdown(
@@ -1364,7 +1364,7 @@ def main():
     st.markdown(
         '<hr style="border-color:#1f2937;">'
         '<div class="small-muted" style="text-align:center;padding:6px 0 18px 0;">'
-        'FDA Placement Analytics · Built with Streamlit · '
+        'SE Placement Analytics · Built with Streamlit · '
         'NumPy · Pandas · Matplotlib · Seaborn · scikit-learn · SciPy'
         '</div>', unsafe_allow_html=True
     )
